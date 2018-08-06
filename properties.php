@@ -26,7 +26,7 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 	<th>Garage_Space</th>
 	<th>HOA</th>
 	<th>HOA_Management</th>
-	<th>HOA_Feepppp</th>
+	<th>HOA_Fee</th>
 </tr>
 <?php
 
