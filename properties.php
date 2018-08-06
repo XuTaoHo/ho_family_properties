@@ -2,7 +2,7 @@
 <body>
 <?php 
 
-$servername = "%";
+$servername = "Jade";
 $username = "root";
 $password = "";
 $dbname = "ho_family_properties";
