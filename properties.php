@@ -2,7 +2,7 @@
 <body>
 <?php 
 
-$servername = "localhost";
+$servername = "%";
 $username = "root";
 $password = "";
 $dbname = "ho_family_properties";
