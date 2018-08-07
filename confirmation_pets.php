@@ -6,10 +6,10 @@ Pet Breed: <?php echo $_GET["pet_breed"] ?><br><br>
 Owner Name: <?php echo $_GET["owner_first_name"]; echo $_GET["owner_last_name"] ?><br><br>
 
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "ho_family_properties";
+$servername = "us-cdbr-iron-east-01.cleardb.net";
+$username = "bbcf53d55dcc9b";
+$password = "69e11031";
+$dbname = "heroku_3d2e2d1647b9f2d";
 
 $pet_type = $_GET["pet_type"];
 $pet_breed = $_GET["pet_breed"];
