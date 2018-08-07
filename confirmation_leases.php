@@ -10,10 +10,10 @@ Deposit Paid: <?php echo $_GET["deposit_paid"] ?><br><br>
 Pet Deposit: <?php echo $_GET["pet_deposit"] ?><br><br>
 Security Deposit: <?php echo $_GET["security_deposit"] ?><br><br>
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "ho_family_properties";
+$servername = "us-cdbr-iron-east-01.cleardb.net";
+$username = "bbcf53d55dcc9b";
+$password = "69e11031";
+$dbname = "heroku_3d2e2d1647b9f2d";
 
 $lease_start = $_GET["lease_start"];
 $lease_end = $_GET["lease_end"];
