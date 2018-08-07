@@ -8,10 +8,10 @@ Start Date: <?php echo $_GET["start_date"] ?><br><br>
 End Date: <?php echo $_GET["end_date"] ?><br><br>
 
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "ho_family_properties";
+$servername = "us-cdbr-iron-east-01.cleardb.net";
+$username = "bbcf53d55dcc9b";
+$password = "69e11031";
+$dbname = "heroku_3d2e2d1647b9f2d";
 
 $property = $_GET["property"];
 $insurance_company = $_GET["insurance_company"];
