@@ -8,10 +8,10 @@ Phone Number: <?php echo $_GET["phone_number"] ?><br><br>
 Email Address: <?php echo $_GET["email_address"] ?><br><br>
 
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "ho_family_properties";
+$servername = "us-cdbr-iron-east-01.cleardb.net";
+$username = "bbcf53d55dcc9b";
+$password = "69e11031";
+$dbname = "heroku_3d2e2d1647b9f2d";
 
 $management_company = $_GET["management_company"];
 $physical_address = $_GET["physical_address"];
