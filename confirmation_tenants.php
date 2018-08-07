@@ -10,10 +10,10 @@ Move In Date: <?php echo $_GET["move_in_date"] ?><br><br>
 Move Out Date: <?php echo $_GET["move_out_date"] ?><br><br>
 
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "ho_family_properties";
+$servername = "us-cdbr-iron-east-01.cleardb.net";
+$username = "bbcf53d55dcc9b";
+$password = "69e11031";
+$dbname = "heroku_3d2e2d1647b9f2d";
 
 $tenant_first_name = $_GET["tenant_first_name"];
 $tenant_last_name = $_GET["tenant_last_name"];
