@@ -8,10 +8,10 @@ Maintenance Person: <?php echo $_GET["maintenance_person"] ?><br><br>
 House Repaired: <?php echo $_GET["house_repaired"] ?><br><br>
 
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "ho_family_properties";
+$servername = "us-cdbr-iron-east-01.cleardb.net";
+$username = "bbcf53d55dcc9b";
+$password = "69e11031";
+$dbname = "heroku_3d2e2d1647b9f2d";
 
 $object_repaired = $_GET["object_repaired"];
 $maintenance_cost = $_GET["maintenance_cost"];
