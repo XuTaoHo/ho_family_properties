@@ -10,10 +10,10 @@ Electricity Date: <?php echo $_GET["electricity_date"] ?><br><br>
 Electricity Amount: <?php echo $_GET["electricity_amount"] ?><br><br>
 
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "ho_family_properties";
+$servername = "us-cdbr-iron-east-01.cleardb.net";
+$username = "bbcf53d55dcc9b";
+$password = "69e11031";
+$dbname = "heroku_3d2e2d1647b9f2d";
 
 $address = $_GET["address"];
 $water_date = $_GET["water_date"];
