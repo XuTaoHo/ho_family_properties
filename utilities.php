@@ -50,7 +50,7 @@ $result = $conn->query($sql);
 	<option value="fiter_electricity_date">Electricity Date</option>
 	<option value="filter_electricity_amount">Electricity Amount</option>
 	</select>
-	Between <input type="text" name="lower_filter_value"> and <input type="text" name="upper_filter_value">
+	Between <input type="text" name="lower_filter_value"> and <input type="text" name="upper_filter_value">.
 </form>
 </body>
 <link rel="stylesheet" type="text/css" href="style.css"/>
