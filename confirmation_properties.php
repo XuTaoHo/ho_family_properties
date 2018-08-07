@@ -14,11 +14,12 @@ Garage Space: <?php echo $_GET["garage_space"] ?><br><br>
 HOA: <?php echo $_GET["hoa"] ?><br><br>
 HOA Management: <?php echo $_GET["hoa_management"] ?><br><br>
 HOA Fee: <?php echo $_GET["hoa_fee"] ?><br><br>
+
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "ho_family_properties";
+$servername = "us-cdbr-iron-east-01.cleardb.net";
+$username = "bbcf53d55dcc9b";
+$password = "69e11031";
+$dbname = "heroku_3d2e2d1647b9f2d";
 
 $property_address = $_GET["property_address"];
 $purchase_date = $_GET["purchase_date"];
