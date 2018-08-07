@@ -5,10 +5,10 @@ Address: <?php echo $_GET["address"] ?><br><br>
 Amount: <?php echo $_GET["amount"] ?><br><br>
 Year: <?php echo $_GET["year"] ?><br><br>
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "ho_family_properties";
+$servername = "us-cdbr-iron-east-01.cleardb.net";
+$username = "bbcf53d55dcc9b";
+$password = "69e11031";
+$dbname = "heroku_3d2e2d1647b9f2d";
 
 $address = $_GET["address"];
 $amount = $_GET["amount"];
