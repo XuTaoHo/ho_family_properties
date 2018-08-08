@@ -39,23 +39,38 @@ $result = $conn->query($sql);
 				</tr>'; 
 		}
 ?>
-  </table>
-<form action="filter_utilities.php" method="get">
+ </table>
+  <form action="filter_utilities.php" method="get">
 	Filter <select name="utilities_filter_subject">
-	<option value="filter_address">Address</option>
-	<option value="filter_water_date">Water Date></option>
-	<option value="filter_water_amount">Water Amount</option>
-	<option value="filter_gas_date">Gas Date</option>
-	<option value="filter_gas_amount">Gas Amount</option>
-	<option value="fiter_electricity_date">Electricity Date</option>
-	<option value="filter_electricity_amount">Electricity Amount</option>
+	<option value="address">Address</option>
+	<option value="water_date">Water Date</option>
+	<option value="water_amount">Water Amount</option>
+	<option value="gas_date">Gas Date</option>
+	<option value="gas_amount">Gas Amount</option>
+	<option value="electricity_date">Electricity Date</option>
+	<option value="electricity_amount">Electricity Amount</option>
 	</select>
-	Between <input type="text" name="lower_filter_value"> and <input type="text" name="upper_filter_value"> <br>
-	<input type="submit" value="Submit">
+	Between <input type="text" name="filter_lower_value"> and <input type="text" name="filter_upper_value"> <br>
+	<input type="submit" name="Submit">
+</form>
+<form action="delete_utilities.php" method="get">
+Delete ID/Address/Management Company <input type="text" name="delete_subject"> <br>
+<input type="submit" name="Submit">
+</form>
+<form action="edit_utilities.php" method="get">
+Edit <select name="replacement_subject">
+	<option value="address">Address</option>
+	<option value="water_date">Water Date</option>
+	<option value="water_amount">Water Amount</option>
+	<option value="gas_date">Gas Date</option>
+	<option value="gas_amount">Gas Amount</option>
+	<option value="electricity_date">Electricity Date</option>
+	<option value="electricity_amount">Electricity Amount</option>
+	</select>
+	to be (New Value) <input type="text" name="replacement_value"> where (ID/Address/Management Company) is
+<input type="text" name="edit_subject"> <br>
+<input type="submit" name="Submit">
 </form>
 </body>
 <link rel="stylesheet" type="text/css" href="style.css"/>
-</html>
-
-</body>
 </html>
