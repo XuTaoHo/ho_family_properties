@@ -27,7 +27,7 @@ $utilities_filter_subject = $_GET["utilities_filter_subject"];
 $filter_lower_value = $_GET["filter_lower_value"];
 $filter_upper_value = $_GET["filter_upper_value"];
 
-$sql = "SELECT * FROM utilities";
+$sql = "SELECT * FROM utilities WHERE $utilities_filter_subject >= $filter_lower_value AND $utilities_filter_subject <= $filter_upper_value";
 $result = $conn->query($sql);
   
 	while($row = $result->fetch_assoc())
@@ -42,5 +42,9 @@ $result = $conn->query($sql);
 					<th>'.$row["electricity_amount"].'</td>
 				</tr>'; 
 		}
+$conn->close();
 ?>
   </table>
+  Filtering <?php echo $utilities_filter_subject;?> from <?php echo $filter_lower_value;?> to <?php echo $filter_upper_value;?>
+  </body>
+  </html>
