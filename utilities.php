@@ -40,7 +40,7 @@ $result = $conn->query($sql);
 		}
 ?>
   </table>
-<form>
+<form action="filter_utilities.php" method="get">
 	Filter <select name="utilities_filter_subject">
 	<option value="filter_address">Address</option>
 	<option value="filter_water_date">Water Date></option>
@@ -50,7 +50,8 @@ $result = $conn->query($sql);
 	<option value="fiter_electricity_date">Electricity Date</option>
 	<option value="filter_electricity_amount">Electricity Amount</option>
 	</select>
-	Between <input type="text" name="lower_filter_value"> and <input type="text" name="upper_filter_value">.
+	Between <input type="text" name="lower_filter_value"> and <input type="text" name="upper_filter_value">
+	<input type="submit" value="submit">
 </form>
 </body>
 <link rel="stylesheet" type="text/css" href="style.css"/>
