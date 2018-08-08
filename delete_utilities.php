@@ -23,11 +23,13 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 </tr>
 <?php
 
-$utilities_filter_subject = $_GET["utilities_filter_subject"];
-$filter_lower_value = $_GET["filter_lower_value"];
-$filter_upper_value = $_GET["filter_upper_value"];
+$delete_subject = $_GET["delete_subject"];
 
-$sql = "SELECT * FROM utilities WHERE $utilities_filter_subject >= $filter_lower_value AND $utilities_filter_subject <= $filter_upper_value";
+$sql2 = "DELETE FROM utilities WHERE address='$delete_subject'";
+
+$result = $conn->query($sql2);
+
+$sql = "SELECT * FROM utilities";
 $result = $conn->query($sql);
   
 	while($row = $result->fetch_assoc())
@@ -44,7 +46,6 @@ $result = $conn->query($sql);
 		}
 $conn->close();
 ?>
-  </table>
-  Filtering <?php echo $utilities_filter_subject;?> from <?php echo $filter_lower_value;?> to <?php echo $filter_upper_value;?>
-  </body>
-  </html>
+Deleted column where ID/Address/Management Company was <?php echo $delete_subject;?>
+</body>
+</html>
