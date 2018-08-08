@@ -2,10 +2,10 @@
 <body>
 <?php 
 
-$servername = "Jade";
-$username = "root";
-$password = "";
-$dbname = "ho_family_properties";
+$servername = "us-cdbr-iron-east-01.cleardb.net";
+$username = "bbcf53d55dcc9b";
+$password = "69e11031";
+$dbname = "heroku_3d2e2d1647b9f2d";
 
 $conn = new mysqli($servername, $username, $password, $dbname);
 
@@ -27,7 +27,7 @@ $utilities_filter_subject = $_GET["utilities_filter_subject"];
 $filter_lower_value = $_GET["filter_lower_value"];
 $filter_upper_value = $_GET["filter_upper_value"];
 
-$sql = "SELECT * FROM utilities WHERE '$utilities_filter_subject' = '$filter_lower_value'";
+$sql = "SELECT * FROM utilities";
 $result = $conn->query($sql);
   
 	while($row = $result->fetch_assoc())
